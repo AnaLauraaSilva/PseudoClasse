@@ -1,0 +1,167 @@
+
+
+/* Centralizar o cabeçalho e o título */
+/* Estilo para o cabeçalho */
+header {
+    background-color: #ffd1a9; /* Tom pastel quente (laranja suave) */
+    padding: 40px;
+    text-align: center; /* Centraliza os itens */
+    border-bottom: 2px solid #ffad60; /* Adiciona uma borda inferior */
+  }
+  
+  
+  header h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  
+  nav h2 {
+    font-size: 24px;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  
+  nav ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0;
+  }
+  
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+  
+  nav ul li a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: #333; /* Cor padrão dos links */
+    background-color: #ffbf80; /* Fundo pastel para os links */
+    padding: 10px 15px;
+    border-radius: 5px; /* Bordas arredondadas */
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Suave transição de cor */
+  }
+  
+  
+  /* Efeito hover nos links */
+  nav ul li a:hover {
+    background-color: #ff9f50; /* Cor de hover mais forte */
+    color: #fff; /* Muda a cor do texto no hover */
+  }
+  
+  
+  /* Estilo para o formulário de contato */
+  form {
+    margin: 20px auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+  }
+  
+  
+  form div + div {
+    margin-top: 1em;
+  }
+  
+  
+  label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  
+  
+  input:focus,
+  textarea:focus {
+    border-color: #000;
+  }
+  
+  
+  textarea {
+    vertical-align: top;
+    height: 5em;
+    resize: vertical;
+  }
+  
+  
+  input[type="checkbox"]:checked + label {
+    color: green;
+  }
+  
+  
+  button:disabled {
+      background-color: #b8b3b3; /* Cor quando desativado */
+      color: #3f3c3c;
+  }
+  h2 {
+    text-align: center;
+  }
+  /* Centralizar e organizar as imagens de duas em duas usando grid */
+  .gallery-list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas imagens por linha */
+    gap: 20px;
+    justify-items: center;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 500px;
+  }
+  
+  
+  .gallery-list li img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
+  /* Aplicar fundo marrom às imagens em posições ímpares */
+  .gallery-list li:nth-child(odd) {
+    background-color: #8B4513;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  
+  /* Estilo para os parágrafos das seções */
+  .content p:first-child {
+    color: blue; /* Estilo para o primeiro parágrafo */
+    font-weight: bold;
+  }
+  
+  
+  .content p:last-child {
+    color: red; /* Estilo para o último parágrafo */
+    font-style: italic;
+  }
+  
+  
+  /* Estilo para o botão "Saiba mais" */
+  .saiba-mais {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+  }
+  
+  
+  .saiba-mais:active {
+    transform: scale(0.95); /* Diminui o tamanho do botão quando clicado */
+  }
+  
+  
+  /* Estilizar o parágrafo sem a classe .important */
+  .extra-content p:not(.important) {
+    color: purple;
+    font-weight: bold;
+  }
+  

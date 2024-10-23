@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pseudoclasses em CSS</title>
+</head>
+
+
+<body>
+    <header>
+        <h1>Pseudoclasses em CSS</h1>
+        <nav>
+            <h2>Navegação</h2>
+            <ul>
+                <li><a href="#articles">Índice de todos os artigos</a></li>
+                <li><a href="#today">Forms</a></li>
+                <li><a href="#successes">Conquistas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div id="articles"></div>
+    <div id="today"></div>
+    <div id="successes"></div>
+
+
+    <form action="/pagina-processa-dados-do-form" method="post">
+        <div>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" required />
+        </div>
+        <div>
+            <label for="mail">E-mail:</label>
+            <input type="email" id="mail" required />
+        </div>
+        <div>
+            <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter" />
+            <label for="subscribeNews">Subscreva a newsletter?</label>
+        </div>
+        <div class="button">
+            <button type="submit" disabled>Enviar</button>
+        </div>
+       
+    </form>
+
+
+    <h2>Galeria de Imagens</h2>
+    <ul class="gallery-list">
+        <li><img src="https://i.pinimg.com/enabled_lo/564x/6b/c1/22/6bc122704b61fe460c23f1cdfad80f71.jpg" alt="Imagem 1"></li>
+        <li><img src="https://i.pinimg.com/564x/05/09/f0/0509f04907d58571b1dfc48358e5b037.jpg" alt="Imagem 2"></li>
+        <li><img src="https://i.pinimg.com/564x/35/c2/62/35c262556e2ad0e4865e97abc84d9d02.jpg" alt="Imagem 3"></li>
+        <li><img src="https://i.pinimg.com/enabled_lo/564x/f3/89/8b/f3898b8fd97dad1a05579c242c43f73c.jpg" alt="Imagem 4"></li>
+        <li><img src="https://i.pinimg.com/564x/17/7f/b1/177fb1a333b81b04caef85af7e692ab3.jpg" alt="Imagem 5"></li>
+        <li><img src="https://i.pinimg.com/enabled_lo/564x/8e/ce/b3/8eceb3bb099afa48490e42ebcadd4126.jpg" alt="Imagem 6"></li>
+    </ul>
+
+
+    <h2>Seções do Site</h2>
+    <div class="content">
+        <p>Esta seção oferece uma visão completa de todos os artigos disponíveis no site, cobrindo diversos tópicos relacionados ao uso de pseudoclasses no CSS.</p>
+        <p>Através desta seção, você pode preencher formulários de contato e interagir diretamente conosco, seja para dúvidas ou sugestões.</p>
+        <p>Aqui, você poderá ver uma lista das principais conquistas e feedbacks que recebemos dos nossos usuários ao longo do tempo.</p>
+    </div>
+
+
+    <!-- Botão Interativo -->
+    <div class="button-section" style="text-align: center;">
+        <button class="saiba-mais" onclick="window.location.href='https://google.com';">Saiba mais</button>
+    </div>
+
+
+    <!-- Parágrafos com e sem classe -->
+    <div class="extra-content">
+        <p class="important">Este parágrafo é importante e tem um estilo específico.</p>
+        <p>Este parágrafo não tem a classe importante e deve ser estilizado.</p>
+    </div>
+</body>
+
+
+</html>
+
